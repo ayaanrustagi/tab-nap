@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tab Nap</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="head">
+      <div>
+        <p class="eyebrow">tab nap</p>
+        <h1>RAM saver</h1>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="enabled" />
+        <span class="ui"></span>
+      </label>
+    </header>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="n" id="napping">0</span>
+        <span class="l">napping</span>
+      </div>
+      <div class="stat">
+        <span class="n" id="open">0</span>
+        <span class="l">open</span>
+      </div>
+      <div class="stat">
+        <span class="n" id="lifetime">0</span>
+        <span class="l">lifetime</span>
+      </div>
+    </div>
+
+    <label class="field">
+      <span>suspend after (minutes)</span>
+      <input type="number" id="idle" min="1" max="240" />
+    </label>
+
+    <div class="checks">
+      <label><input type="checkbox" id="pinned" /> never suspend pinned</label>
+      <label><input type="checkbox" id="audio" /> never suspend audible</label>
+      <label><input type="checkbox" id="active" /> never suspend active tab</label>
+    </div>
+
+    <label class="field">
+      <span>whitelist (one host per line)</span>
+      <textarea id="whitelist" rows="4" placeholder="mail.google.com"></textarea>
+    </label>
+
+    <div class="row">
+      <button type="button" id="suspend-now" class="btn ghost">nap now</button>
+      <button type="button" id="wake-all" class="btn solid">wake all</button>
+    </div>
+    <p class="hint">Uses Chrome’s native tab discard — safe, no page freeze hacks.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
