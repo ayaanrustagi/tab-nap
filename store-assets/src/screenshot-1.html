@@ -1,0 +1,62 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1280px;height:800px;overflow:hidden;font-family:"Hanken Grotesk",system-ui,sans-serif;
+    background:linear-gradient(160deg,#ccfbf1 0%,#e6faf6 45%,#f0fdfa 100%);color:#042f2e}
+  .chrome{width:1180px;height:700px;margin:50px auto;background:#fff;border:1.5px solid #042f2e;
+    border-radius:16px;box-shadow:0 20px 0 0 #0f766e;overflow:hidden;display:grid;grid-template-rows:48px 1fr}
+  .tabs{background:#f0fdfa;border-bottom:1.5px solid #042f2e;display:flex;align-items:center;gap:6px;padding:0 12px}
+  .dot{width:10px;height:10px;border-radius:50%;border:1px solid #042f2e}
+  .dot.r{background:#fb7185}.dot.y{background:#fbbf24}.dot.g{background:#34d399}
+  .tab{padding:6px 14px;border-radius:8px 8px 0 0;font-size:12px;font-weight:700;border:1px solid transparent}
+  .tab.on{background:#fff;border-color:#042f2e;border-bottom-color:#fff}
+  .tab.sleep{opacity:.45}
+  .body{display:grid;grid-template-columns:1fr 340px}
+  .main{padding:48px 52px}
+  h1{font-size:64px;font-weight:900;letter-spacing:-.035em;line-height:.95;margin-bottom:14px}
+  .sub{font-size:18px;font-weight:600;color:#0f766e;margin-bottom:28px;max-width:440px;line-height:1.45}
+  .features{background:#fff;border:1.5px solid #042f2e;border-radius:14px;padding:20px 22px;
+    box-shadow:4px 4px 0 #042f2e;max-width:420px}
+  .features h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#0f766e;margin-bottom:12px}
+  .features li{list-style:none;padding:8px 0;border-top:1px solid #ccfbf1;font-weight:600;font-size:14px}
+  .features li:first-of-type{border-top:0}
+  .side{background:#042f2e;color:#ccfbf1;padding:36px 28px;display:flex;flex-direction:column;justify-content:center}
+  .badge{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.7;margin-bottom:10px}
+  .count{font-size:72px;font-weight:900;letter-spacing:-.04em;line-height:1;margin-bottom:8px}
+  .label{font-size:16px;font-weight:700;margin-bottom:24px}
+  .btn{background:#0f766e;color:#fff;border:1.5px solid #ccfbf1;border-radius:12px;padding:14px 18px;
+    font-weight:800;font-size:14px;text-align:center}
+  .btn span{display:block;font-weight:600;font-size:12px;opacity:.8;margin-top:4px}
+</style></head>
+<body>
+<div class="chrome">
+  <div class="tabs">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <span class="tab on">docs · active</span>
+    <span class="tab sleep">hn · napping</span>
+    <span class="tab sleep">yt · napping</span>
+    <span class="tab sleep">mail · awake</span>
+  </div>
+  <div class="body">
+    <div class="main">
+      <h1>Tabs that<br>actually nap.</h1>
+      <p class="sub">Native Chrome discard — free RAM without freeze hacks. Whitelist, pin protect, wake all.</p>
+      <div class="features">
+        <h3>What Tab Nap does</h3>
+        <li>Suspend after your idle minutes</li>
+        <li>Whitelist: mail.google.com</li>
+        <li>Never suspend pinned / audio</li>
+        <li>Wake all napping tabs</li>
+      </div>
+    </div>
+    <div class="side">
+      <div class="badge">Badge</div>
+      <div class="count">12</div>
+      <div class="label">tabs napping now</div>
+      <div class="btn">Wake all<span>one click restore</span></div>
+    </div>
+  </div>
+</div>
+</body></html>
