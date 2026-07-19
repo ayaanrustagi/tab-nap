@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tab Nap — Great Suspender Alternative for Chrome (Auto Tab Suspender)</title>
+  <meta name="description" content="Free Great Suspender alternative for modern Chrome. Auto-suspend idle tabs with the native discard API to free RAM. Whitelist sites, protect pinned and audio tabs, wake all in one click. Manifest V3.">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Tab Nap">
+  <meta name="google-site-verification" content="Ziby-jkK6wZeBmDCvlC-Wc3sF0-6bwfgrkicRXNImuY" />
+  <link rel="canonical" href="https://ayaanrustagi.github.io/tab-nap/">
+  <link rel="icon" type="image/png" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tab Nap">
+  <meta property="og:title" content="Tab Nap — Auto Tab Suspender & Great Suspender Alternative">
+  <meta property="og:description" content="Suspend idle Chrome tabs to free RAM. Native discard API. Whitelist, pin protect, wake all. Free Manifest V3.">
+  <meta property="og:url" content="https://ayaanrustagi.github.io/tab-nap/">
+  <meta property="og:image" content="https://ayaanrustagi.github.io/tab-nap/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tab Nap — tabs that actually nap">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tab Nap — Chrome Tab Suspender">
+  <meta name="twitter:description" content="Great Suspender–style auto tab suspender for Manifest V3. Free RAM safely.">
+  <meta name="twitter:image" content="https://ayaanrustagi.github.io/tab-nap/og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Tab Nap",
+        "url": "https://ayaanrustagi.github.io/tab-nap/",
+        "description": "Great Suspender alternative — auto suspend idle Chrome tabs to free RAM."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Tab Nap",
+        "applicationCategory": "BrowserApplication",
+        "applicationSubCategory": "Tab suspender / memory saver",
+        "operatingSystem": "Chrome, Edge, Brave, Arc",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Automatically suspend idle Chrome tabs using the native tabs.discard API to free RAM. Whitelist hosts, protect pinned and audible tabs, wake all napping tabs. Free Manifest V3 Great Suspender alternative.",
+        "url": "https://ayaanrustagi.github.io/tab-nap/",
+        "image": "https://ayaanrustagi.github.io/tab-nap/og.png",
+        "featureList": [
+          "Auto tab suspender Chrome extension",
+          "Great Suspender alternative Manifest V3",
+          "Native tabs.discard API",
+          "Whitelist never-suspend sites",
+          "Protect pinned and audio tabs",
+          "Wake all napping tabs"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Tab Nap a Great Suspender alternative?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tab Nap auto-suspends idle tabs on modern Manifest V3 Chrome using the official discard API — the safe successor spirit of The Great Suspender, not affiliated with the original project." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Tab Nap free RAM?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Idle tabs past your timer are discarded with Chrome’s native API so memory can return without freeze hacks." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I whitelist sites?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Add hosts that should never nap (e.g. mail). Pinned and audible tabs are protected by default." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="progress"><div class="progress__bar"></div></div>
+  <header class="topbar">
+    <a class="logo-pill" href="index.html" aria-label="Tab Nap home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>
+      Tab Nap
+    </a>
+  </header>
+  <nav class="dock" aria-label="Sections">
+    <a href="#top" data-spy="top">Home</a>
+    <a href="#features" data-spy="features">Features</a>
+    <a href="#how" data-spy="how">How</a>
+    <a href="#install" data-spy="install">Install</a>
+  </nav>
+
+  <main>
+    <div class="grad-canvas">
+    <section class="hero" id="top">
+      <a class="badge" href="#install"><span>Free on<br>Chrome</span>
+        <span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <h1 class="hero-title">
+        <span class="line"><span>Tabs</span></span>
+        <span class="line"><span>That</span></span>
+        <span class="line"><span>Actually</span></span>
+        <span class="line"><span>Nap</span></span>
+      </h1>
+      <a class="scroll-pill" href="#what">Scroll — see the RAM come back
+        <span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+      </a>
+    </section>
+
+    <section class="statement" id="what">
+      <p class="eyebrow">But what does it actually do?</p>
+      <p class="statement__text display js-words">
+        Tab Nap is a free Great Suspender alternative: auto-suspend idle tabs with Chrome's native discard API — free RAM without freeze hacks.
+      </p>
+      <p class="statement__tag">
+        <span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Tab suspender for Manifest V3. Modern Chrome.
+      </p>
+    </section>
+    </div>
+
+    <section class="statement-block" aria-label="Statement">
+      <div class="statement-block__inner">
+        <p class="mono-label">Sleep the noise. Keep the work.</p>
+        <h2 class="display statement-block__title">Idle tabs nap. Active tabs stay awake.</h2>
+        <p class="statement-block__copy">Whitelist mail and docs. Never suspend pinned or audio. Wake everything in one click when you need the circus back.</p>
+      </div>
+    </section>
+
+    <section class="cards" id="features">
+      <div class="cards__head"><div class="cards__head-inner"><h2 class="display">What Tab Nap does for you</h2></div></div>
+      <div class="cards__stack">
+        <article class="card card--a"><span class="card__num">1</span><h3>Auto-suspend</h3><p>Tabs idle past your timer are discarded with Chrome's official API — safe, supported, no frozen zombies.</p></article>
+        <article class="card card--b"><span class="card__num">2</span><h3>Smart exceptions</h3><p>Pinned, audible, active, and your host whitelist never nap. Gmail can stay awake forever.</p></article>
+        <article class="card card--c"><span class="card__num">3</span><h3>Wake all</h3><p>One button reloads every napping tab. Badge shows how many are currently asleep.</p></article>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <h2 class="display">How it works</h2>
+      <div class="how__steps">
+        <div class="step">
+          <span class="step__num" aria-hidden="true">1</span>
+          <div class="step__body">
+            <h3 class="step__title">Set idle minutes</h3>
+            <p>Default 15. Tabs you forget become candidates for a nap.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step__num" aria-hidden="true">2</span>
+          <div class="step__body">
+            <h3 class="step__title">Native discard</h3>
+            <p>Chrome freezes the process safely. Click the tab anytime to restore.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step__num" aria-hidden="true">3</span>
+          <div class="step__body">
+            <h3 class="step__title">Stay in control</h3>
+            <p>Whitelist, pin protection, wake-all. Your rules — nothing sneaky.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="install" id="install" style="padding:100px 24px;text-align:center;background:#ccfbf1;border-top:1.5px solid #042f2e">
+      <h2 class="display" style="margin-bottom:16px">Put your tabs to bed.</h2>
+      <p style="margin-bottom:20px;opacity:.85;max-width:420px;margin-left:auto;margin-right:auto">Free · Manifest V3 · No account. Store listing pending review — load unpacked until live.</p>
+      <a class="logo-pill" href="#install" style="pointer-events:auto;background:#0f766e;color:#fff;border:1.5px solid #042f2e">Under Review</a>
+      <a class="logo-pill" href="privacy.html" style="pointer-events:auto;margin-left:8px;background:#fff;color:#0f766e;border:1.5px solid #042f2e">Privacy</a>
+      <p style="margin-top:16px;font-size:12px;opacity:.7">chrome://extensions → Developer mode → Load unpacked → tab-nap/</p>
+    </section>
+  </main>
+  <footer style="padding:24px;text-align:center;font-size:12px;border-top:1.5px solid #042f2e">
+    <a href="privacy.html">Privacy</a> · Tab Nap · Manifest V3
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Tab Nap Tab Suspender</title>
+  <meta name="description" content="Tab Nap privacy policy. Great Suspender–style tab suspender using Chrome’s native discard. Settings stay local. No servers, no tracking.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ayaanrustagi.github.io/tab-nap/privacy.html">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" type="image/png" href="favicon-32.png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Privacy Policy — Tab Nap">
+  <meta property="og:description" content="Local-first tab suspender privacy details.">
+  <meta property="og:url" content="https://ayaanrustagi.github.io/tab-nap/privacy.html">
+  <meta property="og:image" content="https://ayaanrustagi.github.io/tab-nap/og.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <main style="max-width:680px;margin:0 auto;padding:100px 24px 80px">
+    <p class="eyebrow" style="color:#0f766e;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:11px">Tab Nap</p>
+    <h1 class="display" style="margin:12px 0 8px">Privacy Policy</h1>
+    <p style="opacity:.75;margin-bottom:28px">Effective date: July 19, 2026</p>
+
+    <div style="line-height:1.65;font-size:16px">
+      <p><strong>Summary:</strong> Tab Nap only manages your tabs and settings on your device. It does not send browsing content to a Tab Nap server. There is no account.</p>
+
+      <h2 style="margin-top:28px;font-size:22px">What Tab Nap does</h2>
+      <p>Using Chrome’s <code>tabs</code> API and <code>tabs.discard</code>, Tab Nap may suspend tabs that have been idle longer than your chosen threshold, subject to your whitelist and protections (active, pinned, audible tabs).</p>
+
+      <h2 style="margin-top:28px;font-size:22px">Data stored locally</h2>
+      <ul>
+        <li>Idle minutes preference</li>
+        <li>Whitelist of hostnames</li>
+        <li>Simple counters / UI state</li>
+      </ul>
+      <p>Via <code>chrome.storage.local</code> only.</p>
+
+      <h2 style="margin-top:28px;font-size:22px">Permissions</h2>
+      <ul>
+        <li><strong>tabs</strong> — find idle tabs, discard, wake/reload, badge count</li>
+        <li><strong>storage</strong> — preferences</li>
+        <li><strong>alarms</strong> — periodic idle checks</li>
+      </ul>
+      <p>Tab Nap does not use host permissions or inject scripts into web pages.</p>
+
+      <h2 style="margin-top:28px;font-size:22px">What we don’t do</h2>
+      <ul>
+        <li>No Tab Nap cloud</li>
+        <li>No selling data</li>
+        <li>No reading page content for advertising</li>
+      </ul>
+
+      <h2 style="margin-top:28px;font-size:22px">Website</h2>
+      <p>Static site hosting (e.g. GitHub Pages) may log standard requests per the host’s policy.</p>
+
+      <h2 style="margin-top:28px;font-size:22px">Changes</h2>
+      <p>Updates will revise the effective date above.</p>
+
+      <p style="margin-top:32px"><a href="index.html">← Back to Tab Nap</a></p>
+    </div>
+  </main>
+</body>
+</html>
